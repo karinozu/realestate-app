@@ -5,7 +5,8 @@
   padding: 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s, box-shadow 0.2s;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -22,6 +23,7 @@
   font-size: 0.75rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
+  align-self: flex-start;
 }
 
 .name {
@@ -36,6 +38,7 @@
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 1.25rem;
+  flex: 1;
 }
 
 .row {
@@ -61,6 +64,7 @@
   display: flex;
   align-items: baseline;
   gap: 0.25rem;
+  margin-bottom: 1rem;
 }
 
 .rentAmount {
@@ -72,4 +76,46 @@
 .rentUnit {
   font-size: 0.875rem;
   color: #718096;
+}
+
+/* 編集・削除ボタン領域 */
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editButton {
+  flex: 1;
+  padding: 0.5rem;
+  background: #fff;
+  color: #4299e1;
+  border: 1px solid #4299e1;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.editButton:hover {
+  background: #4299e1;
+  color: #fff;
+}
+
+.deleteButton {
+  flex: 1;
+  padding: 0.5rem;
+  background: #fff;
+  color: #e53e3e;
+  border: 1px solid #e53e3e;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.deleteButton:hover {
+  background: #e53e3e;
+  color: #fff;
 }
