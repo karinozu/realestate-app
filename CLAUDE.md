@@ -18,6 +18,11 @@ git commit -m "変更内容の説明"
 git push origin <ブランチ名>
 ```
 
+## デプロイ情報
+
+- 本番URL：https://realestate-app-three-zeta.vercel.app
+- Supabaseプロジェクト名：realestate-app
+
 ## 一般ルール
 
 - 変更は最小限にとどめ、不要なリファクタリングは行わない
